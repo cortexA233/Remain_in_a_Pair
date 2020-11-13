@@ -41,6 +41,16 @@ public class player_control_2 : MonoBehaviour
         attract();
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && is_ground == 1)
+        {
+            Invoke("is_grond_recover", 8f);
+            is_ground = 0;
+            AudioManager.instance.AudioPlay(jumpAudio);
+            rig.AddForce(new Vector2(0, jump_height * 50f));
+        }
+    }
     private void OnCollisionEnter2D(Collision2D col)
     {
      //   is_ground = 1; //ZGY:记得改回来
@@ -74,13 +84,7 @@ public class player_control_2 : MonoBehaviour
         }
         anime.SetFloat("LookX", lookat);           
         anime.SetFloat("speed",Mathf.Abs(rig.velocity.x));
-        if (Input.GetKeyDown(KeyCode.Space) && is_ground == 1)
-        {
-            Invoke("is_grond_recover", 8f);
-            is_ground = 0;
-            AudioManager.instance.AudioPlay(jumpAudio);
-            rig.AddForce(new Vector2(0, jump_height * 50f));
-        }
+        
     }
 
     void attract()
