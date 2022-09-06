@@ -30,7 +30,7 @@ TextureImporter:
       213: 6320572342612093594
     second: FloorGrassToBricksCorner_8
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -50,6 +50,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -58,9 +60,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -81,9 +83,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -323,6 +329,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FloorGrassToBricksCorner_6: -1519951085987953674
+      FloorGrassToBricksCorner_0: -3265215667744824251
+      FloorGrassToBricksCorner_4: -8494855901003087046
+      FloorGrassToBricksCorner_3: -7684012841847623795
+      FloorGrassToBricksCorner_2: -5383219996417302934
+      FloorGrassToBricksCorner_7: -4791438984722042884
+      FloorGrassToBricksCorner_1: 7275759306356368550
+      FloorGrassToBricksCorner_5: -7383445712326616866
+      FloorGrassToBricksCorner_8: 6320572342612093594
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
